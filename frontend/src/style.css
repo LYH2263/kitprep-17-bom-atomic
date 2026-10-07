@@ -96,6 +96,13 @@ h1 { margin: 0 0 0.2rem; font-size: 1.2rem; font-weight: 800; color: #f0e6d8; }
 .kp-dish-node li {
   font-size: 0.75rem; color: #c8beb0; padding: 0.15rem 0;
 }
+.kp-qty-input {
+  width: 4.5rem; padding: 0.1rem 0.3rem;
+  background: #1c1814; color: #f0e6d8;
+  border: 1px solid var(--kp-steel); border-radius: 2px;
+  font-size: 0.75rem; text-align: right;
+}
+.kp-qty-input:focus { outline: 1px solid var(--kp-accent); }
 
 .kp-worksheet {
   background: var(--kp-board);
