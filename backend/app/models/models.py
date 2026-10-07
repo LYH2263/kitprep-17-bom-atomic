@@ -45,3 +45,5 @@ class PrepRun(Base):
     order_id: Mapped[int] = mapped_column(ForeignKey("kitchen_orders.id"))
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     result_json: Mapped[str] = mapped_column(Text, default="{}")
+    # active = 当前有效备料单（随定额保存重算）；archived = 已存档，钉死当时用量
+    status: Mapped[str] = mapped_column(String(16), default="active")
